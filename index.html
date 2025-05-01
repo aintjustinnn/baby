@@ -60,15 +60,16 @@
     }
 
     #images img {
-      width: 100px;
+      width: 100%;
+      max-width: 250px;
       border-radius: 15px;
       margin: 10px 0;
       border: 2px solid pink;
     }
 
     #video video {
-      width: 100px;
-      max-width: 100%;
+      width: 100%;
+      max-width: 300px;
       border: 3px solid palevioletred;
       border-radius: 20px;
     }
@@ -112,6 +113,26 @@
       100% {
         top: -10%;
         opacity: 0;
+      }
+    }
+
+    /* Ensure responsiveness on small screens */
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 20px;
+      }
+
+      button {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+
+      #message p {
+        font-size: 16px;
+      }
+
+      #media {
+        flex-direction: column;
       }
     }
   </style>
