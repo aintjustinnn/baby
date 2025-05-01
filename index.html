@@ -178,6 +178,8 @@
       document.getElementById('love-audio').play();
       document.getElementById('message').style.display = 'block';
       setTimeout(() => {
+        const video = document.getElementById('surprise-video');
+        video.play();  // Ensure the video starts playing automatically
         document.getElementById('media').style.display = 'flex';
       }, 1000);
     }
